@@ -1,0 +1,8 @@
+# Define a softmax function
+def softmax(x):
+    p=np.exp(x)/np.sum(np.exp(x),axis=0) 
+    return p
+
+# Test it out on an array
+test=[1,3,2]
+print(softmax(test))
